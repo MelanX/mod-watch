@@ -1,5 +1,5 @@
 import { NodeCG } from "nodecg/types/server";
-import { TwitchServiceClient } from "nodecg-io-twitch/extension";
+import { TwitchServiceClient } from "nodecg-io-twitch-chat/extension";
 import { requireService } from "nodecg-io-core/extension/serviceClientWrapper";
 import * as fs from "fs";
 
