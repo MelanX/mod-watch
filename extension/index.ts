@@ -11,7 +11,7 @@ const twitchChannel = "#skate702";
 module.exports = function(nodecg: NodeCG) {
     nodecg.log.info("mod-watch started");
 
-    const twitch = requireService<TwitchServiceClient>(nodecg, "twitch");
+    const twitch = requireService<TwitchServiceClient>(nodecg, "twitch-chat");
 
     twitch?.onAvailable((client) => {
         client.getNativeClient().join(twitchChannel).then(() => {
